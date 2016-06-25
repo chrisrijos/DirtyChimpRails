@@ -1,0 +1,8 @@
+<%= link_to 'Upload Video', video_new_path %>
+<h1>Videos</h1>
+<% @video.each do |v| %>
+<h1>title: <%= v.title %></h1>
+<h1>Desc: <%= v.description %></h1>
+<h1>url: <%= v.video %></h1>
+<h1>banana count: <%= v.banana %></h1>
+<% end %>
