@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   resources :video, only: [:new, :create]
   
   root 'video#index'
