@@ -1,2 +1,13 @@
-<h1>Video#edit</h1>
-<p>Find me in app/views/video/edit.html.erb</p>
+ <%= form_for(@video) do |f| %>
+
+      <%= f.label :titl %>
+      <%= f.text_field :title, class: 'form-control' %>
+
+      <%= f.label :description %>
+      <%= f.email_field :description, class: 'form-control' %>
+
+      <%= f.label :video %>
+      <%= f.file_field :video, class: 'form-control' %>
+
+      <%= f.submit "Save changes"%>
+<% end %>

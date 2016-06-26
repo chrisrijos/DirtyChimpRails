@@ -4,5 +4,6 @@
 <h1>title: <%= v.title %></h1>
 <h1>Desc: <%= v.description %></h1>
 <h1>url: <%= v.video %></h1>
+<%= link_to 'Edit', video_edit_path(:id => v.id) %>
 <h1>banana count: <%= v.banana %></h1>
 <% end %>

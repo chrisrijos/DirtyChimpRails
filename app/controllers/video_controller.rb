@@ -17,6 +17,7 @@ class VideoController < ApplicationController
     @video = Video.find(params[:id])
   end
   
+  
   def create
      @video = Video.new(allowed_params)
         
@@ -27,7 +28,12 @@ class VideoController < ApplicationController
         end
   end
   
+  def update
+      
+  end
+  
   def edit
+      @video = Video.find(params[:id])
   end
 
   def delete

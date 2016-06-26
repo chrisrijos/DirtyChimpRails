@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get 'video/edit'
 
+  post 'video/update'
+
   get 'video/delete'
   
   get 'video/create'
