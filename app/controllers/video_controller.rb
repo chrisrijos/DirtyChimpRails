@@ -29,7 +29,13 @@ class VideoController < ApplicationController
   end
   
   def update
-      
+       @video = Video.find(params[:id])
+ 
+      if @article.update(allowed_params)
+        redirect_to @video
+      else
+        render 'edit'
+      end
   end
   
   def edit

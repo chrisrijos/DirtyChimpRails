@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   devise_for :users
-  resources :video, only: [:new, :create]
+  resources :video, only: [:new, :create, :update]
   
   root 'video#index'
   
@@ -12,8 +12,6 @@ Rails.application.routes.draw do
   get 'video/show'
 
   get 'video/edit'
-
-  post 'video/update'
 
   get 'video/delete'
   

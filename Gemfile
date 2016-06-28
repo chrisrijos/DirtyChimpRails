@@ -23,6 +23,8 @@ gem 'bitters'
 
 #attachments
 gem "paperclip", "~> 5.0.0.beta1"
+gem 'paperclip-ffmpeg', '~> 1.2'
+gem 'paperclip-av-transcoder'
 gem 'aws-sdk', '~> 2.3'
 
 #dry

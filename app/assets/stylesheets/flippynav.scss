@@ -1,0 +1,10 @@
+
+.navbar{
+    @include span-columns(1);
+    
+    .nav-li{
+        @include outer-container($main-container-size);
+        text-align: center;
+        
+    }
+}
